@@ -1,23 +1,10 @@
-# Wallet-selection
-lightweight module to provide wallet selection for DApp users
+# Wallet-provider-interface
+
+Typescritp Interface definition for a wallet-provider
 
 ## Assumptions
 
 * For use in a WebApp UI for blockchain smart contracts
-
-## User Flow
-
-* If the user clicks on the WebApp [ Login ] button a function from this libary is called
-* The function presents the user a screen to select a wallet.
-* When the user selects a wallet, the function resolves into a `ProviderInformation` structure
-* `ProviderInformation` contains data about the wallet: name, capabilities, url to wallet-provider.js file for this particular wallet
-* All `wallet-providers.js` implement the [wallet-provider-interface](https://github.com/wallet-provider-js/wallet-provider-interface) 
-* The DApp can use ES2020 Dynamic Import to download `wallet-provider.js`, or it can have several providers pre-included and just choose which one to activate
-* The DApp uses the selected `wallet-provider` capabilities
- * Sign Message [required] (just sign an arbitrary message)
- * Unsigned View-Call [optional] (call a view-function not requiring signature in the chain) 
- * Send Tx (Sign & Send) [optional] (sign and send a Tx into the blockchain)
- * Login/Logout [required]
 
 In order to keep the providers as simple as possible, key management, contract ABI, Tx composition and other functionality are intentionally kept outside of the scope of a wallet provider, but can be added by separate supporting libraries.
 
