@@ -63,4 +63,13 @@ Example, Batch Transaction:
  const result = await provider.signAndSend(tx)
 ```
 
+## References
+
+https://gov.near.org/t/wallet-selection-sdk/215/6
+
+https://walletconnect.org/
+
+https://github.com/mathwallet/math-nearjs
+
+https://github.com/Narwallets/narwallets-extension/blob/master/API-design.md
 
