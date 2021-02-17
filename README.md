@@ -47,8 +47,8 @@ The provider receives the smart contract account id, and perform login/logout ac
 
 * To provide a for the common single-call use case the provider can execute single items, but internally all transactions are BatchTransaction.
 * Wallet-providers with **Sign-Tx** capabilities have functions to create transactions items
- ** e.g. `Provider.viewCall(contract_id:string, method:string, args:Record<string,any> : TxItem`
- ** e.g. `Provider.call(contract_id:string, method:string, args:Record<string,any>, gas:number, attachedNativeToken:numer) : TxItem`
+ * * `Provider.viewCall(contract_id:string, method:string, args:Record<string,any> : TxItem`
+ * * `Provider.call(contract_id:string, method:string, args:Record<string,any>, gas:number, attachedNativeToken:numer) : TxItem`
 
 Example, single call:
 ```
