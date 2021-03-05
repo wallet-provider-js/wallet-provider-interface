@@ -68,7 +68,7 @@ Example, Batch Transaction:
 
 https://gov.near.org/t/wallet-selection-sdk/215/6
 
-https://walletconnect.org/
+https://walletconnect.org/  (For Mobile Wallets via QR)
 
 https://github.com/mathwallet/math-nearjs
 
